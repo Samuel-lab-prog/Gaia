@@ -7,6 +7,7 @@ type ButtonProps = {
   onClick?: () => void
   to?: string
   href?: string
+  className?: string
 }
 
 export default function Button({
@@ -16,6 +17,7 @@ export default function Button({
   onClick,
   to,
   href,
+  className = "",
 }: ButtonProps) {
   const buttonVariants: Record<string, string> = {
     primary: "btn btn-primary",
@@ -37,7 +39,7 @@ export default function Button({
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className={buttonVariants[variant]}
+        className={`${buttonVariants[variant]} ${className}`}
         onClick={onClick}
       >
         {content}
@@ -52,8 +54,8 @@ export default function Button({
         onClick={onClick}
         className={({ isActive }) =>
           isActive
-            ? `${buttonVariants[variant]} active-anchor` // classe extra quando ativo
-            : buttonVariants[variant]
+            ? `${buttonVariants[variant]} active-anchor ${className}`
+            : `${buttonVariants[variant]} ${className}`
         }
       >
         {content}
@@ -63,7 +65,7 @@ export default function Button({
 
   return (
     <button
-      className={buttonVariants[variant]}
+      className={`${buttonVariants[variant]} ${className}`}
       onClick={onClick}
       disabled={variant === "disabled"}
     >

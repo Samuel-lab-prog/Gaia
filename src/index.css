@@ -8,7 +8,7 @@
 }
 @layer base {
   body {
-    @apply font-secondary bg-black text-gray-50;
+    @apply font-secondary bg-black text-white
   }
   h1 {
     @apply font-primary text-4xl font-bold;
@@ -20,7 +20,7 @@
     @apply font-primary text-2xl font-medium;
   }
   p {
-    @apply font-secondary text-base text-gray-200;
+    @apply font-secondary text-base 
   }
 }
 
@@ -35,10 +35,10 @@
     @apply bg-transparent border border-gray-200 text-gray-200 hover:bg-gray-800;
   }
   .btn-disabled {
-    @apply bg-gray-600 text-gray-400 cursor-not-allowed;
+    @apply cursor-not-allowed;
   }
   .anchor {
-    @apply text-white hover:text-gray-300 cursor-pointer;
+    @apply cursor-pointer;
   }
   .active-anchor {
     @apply underline underline-offset-4;
