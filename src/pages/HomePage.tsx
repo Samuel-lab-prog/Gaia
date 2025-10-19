@@ -1,3 +1,4 @@
+
 import Button from "../components/Button";
 
 export default function Home() {
@@ -39,7 +40,7 @@ export default function Home() {
       <section className="relative flex flex-col items-start justify-center p-6 z-10 bg-top bg-cover h-70 md:h-96 lg:h-146 lg:p-12 bg-[url(./src/assets/flavia.png)]">
         <div className="absolute inset-0 bg-gradient-to-l from-black/70 to-black/100"></div>
 
-        <h2 className="z-10 text-center text-white md:text-5xl">Nossa missão</h2>
+        <h2 className="z-10 text-white md:text-5xl w-3/5">Nossa missão</h2>
         <p className="z-10 my-2 text-gray-300 w-3/5 md:w-3/5 xl:w-2/5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sed
           mollitia earum voluptatem hic dolorum natus in veritatis ipsam
@@ -59,6 +60,7 @@ export default function Home() {
           src="./src/assets/membros.png"
           alt=""
           className="mb-4 w-full lg:w-4/5"
+          loading="lazy"
         />
         <Button variant="secondary" to="/members">
           Conheça-os
@@ -74,16 +76,19 @@ export default function Home() {
             src="./src/assets/instagram.svg"
             alt="Instagram"
             className="w-10 hover:cursor-pointer hover:opacity-50"
+            loading="lazy"
           />
           <img
             src="./src/assets/facebook.svg"
             alt="Facebook"
             className="w-10 hover:cursor-pointer hover:opacity-50"
+            loading="lazy"
           />
           <img
             src="./src/assets/youtube.svg"
             alt="YouTube"
             className="w-10 hover:cursor-pointer hover:opacity-50"
+            loading="lazy"
           />
         </div>
 
