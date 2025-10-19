@@ -26,7 +26,7 @@
 
 @layer components {
   .btn {
-    @apply font-secondary px-4 py-2 rounded transition-all cursor-pointer inline-flex;
+    @apply font-secondary px-3 py-1 rounded transition-all cursor-pointer inline-flex text-sm;
   }
   .btn-primary {
     @apply bg-gray-200 text-black hover:bg-gray-400;
@@ -42,5 +42,8 @@
   }
   .active-anchor {
     @apply underline underline-offset-4 font-bold;
+  }
+  .input-text {
+    @apply bg-gray-200 text-black border border-gray-600 rounded px-2 py-1 focus:outline-none focus:ring-1 focus:ring-white w-auto transition-all;
   }
 }

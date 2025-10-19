@@ -8,6 +8,7 @@ type ButtonProps = {
   to?: string
   href?: string
   className?: string
+  type?: "button" | "submit" | "reset"
 }
 
 export default function Button({
@@ -18,6 +19,7 @@ export default function Button({
   to,
   href,
   className = "",
+  type = "button",
 }: ButtonProps) {
   const buttonVariants: Record<string, string> = {
     primary: "btn btn-primary",
@@ -68,6 +70,7 @@ export default function Button({
       className={`${buttonVariants[variant]} ${className}`}
       onClick={onClick}
       disabled={variant === "disabled"}
+      type={type}
     >
       {content}
     </button>
