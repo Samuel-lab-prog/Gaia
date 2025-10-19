@@ -1,12 +1,19 @@
 
+import { motion } from "framer-motion";
 import Button from "../components/Button";
 
 export default function Home() {
   return (
-    <>
+    <main className="absolute w-full h-full">
       {/* HERO */}
-      <section className="relative flex h-screen flex-col items-center justify-center px-6 bg-[url(./src/assets/laura.png)] bg-top bg-cover lg:bg-[url(./src/assets/flautas.png)]">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-black/95 lg:bg-gradient-to-t lg:from-black/80 lg:to-black/50"></div>
+      <motion.section className="relative flex h-screen flex-col items-center justify-center px-6 bg-[url(./src/assets/laura.png)] bg-top bg-cover lg:bg-[url(./src/assets/flautas.png)]"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true, amount: 0.4 }}
+       
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/100 lg:bg-gradient-to-t lg:from-black/80 lg:to-black/50"></div>
 
         <div className="relative z-10 text-center">
           <h1 className="text-white lg:text-9xl">Gaia</h1>
@@ -17,13 +24,22 @@ export default function Home() {
             Ver shows
           </Button>
         </div>
-      </section>
+      </motion.section>
 
       {/* CONHEÇA O GAIA */}
-      <section className="relative flex h-78 flex-col justify-center overflow-hidden p-6 z-10 md:h-84 lg:h-116 lg:p-12">
+      <motion.section className="relative flex h-78 flex-col justify-center overflow-hidden p-6 z-10 md:h-84 lg:h-116 lg:p-12"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true, amount: 0.6 }}
+      >
+
         <div className="absolute top-0 right-0 hidden h-full w-4/5 z-0 bg-center bg-cover md:block md:bg-[url('/src/assets/laura2.png')]"></div>
 
-        <div className="relative z-10">
+        <div className="relative z-10"
+
+        >
+
           <h2 className="text-white md:text-5xl">Conheça o Gaia</h2>
           <p className="my-2 text-gray-300 md:my-5 md:w-3/5 xl:w-2/5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
@@ -34,11 +50,17 @@ export default function Home() {
             Sobre nós
           </Button>
         </div>
-      </section>
+      </motion.section>
 
       {/* NOSSA MISSÃO */}
-      <section className="relative flex flex-col items-start justify-center p-6 z-10 bg-top bg-cover h-70 md:h-96 lg:h-146 lg:p-12 bg-[url(./src/assets/flavia.png)]">
-        <div className="absolute inset-0 bg-gradient-to-l from-black/70 to-black/100"></div>
+      <motion.section
+        className="relative flex flex-col items-start justify-center p-6 z-10 bg-top bg-cover h-70 md:h-96 lg:h-146 lg:p-12 bg-[url(./src/assets/flavia.png)]"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-l from-black/50 to-black/100"></div>
 
         <h2 className="z-10 text-white md:text-5xl w-3/5">Nossa missão</h2>
         <p className="z-10 my-2 text-gray-300 w-3/5 md:w-3/5 xl:w-2/5">
@@ -46,11 +68,15 @@ export default function Home() {
           mollitia earum voluptatem hic dolorum natus in veritatis ipsam
           ratione!
         </p>
-        
-      </section>
+      </motion.section>
+
 
       {/* MEMBROS */}
-      <section className="relative flex flex-col items-center p-6 z-10 lg:p-12">
+      <motion.section className="relative flex flex-col items-center p-6 z-10 lg:p-12"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true, amount: 0.05 }} >
         <h2 className="text-center text-white md:text-5xl">Membros</h2>
         <p className="my-2 text-center text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
@@ -65,7 +91,7 @@ export default function Home() {
         <Button variant="secondary" to="/members">
           Conheça-os
         </Button>
-      </section>
+      </motion.section>
 
       {/* REDES SOCIAIS */}
       <section className="relative flex flex-col items-center p-6 z-10 bg-neutral-950 lg:p-12">
@@ -107,6 +133,6 @@ export default function Home() {
           </Button>
         </form>
       </section>
-    </>
+    </main>
   );
 }

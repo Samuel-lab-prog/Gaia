@@ -25,7 +25,7 @@ export default function Navbar({
       <Dropdown links={links} isOpen={isDropdownOpen} toggle={() => setIsDropdownOpen(false)} />
 
       <nav className={navClasses}>
-        <h2 onClick={() => navigate("/")} className="text-white hover:cursor-pointer hover:opacity-50 transition-all duration-200">{brandName}</h2>
+        <h2 onClick={() => {navigate("/"); setIsDropdownOpen(false)}} className="text-white hover:cursor-pointer hover:opacity-50 transition-all duration-200">{brandName}</h2>
 
         <ul className={linkListClasses}>
           {links.map((link) => (
