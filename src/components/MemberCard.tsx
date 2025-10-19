@@ -1,0 +1,17 @@
+
+type MemberCardProps = {
+    name: string;
+    imageSrc: string;
+    role: string;
+}
+
+export default function MemberCard({ name, imageSrc, role }: MemberCardProps) {
+  return (
+    <div className={"relative hover:cursor-pointer hover:scale-105 transition-all duration-200 hover:border-white hover:border-2 rounded-lg overflow-hidden hover:z-10"}>
+        <div className="absolute inset-0 bg-linear-to-b from-black/0 to-black/100"></div>
+        <img src={imageSrc} alt={name} className="aspect-9/16 object-cover object-center rounded-lg shadow-lg max-h-100 w-full" />
+        <h4 className="text-gray-200 absolute bottom-4 xl:bottom-16 text-center w-full z-1 lg:text-3xl xl:text-4xl">{name}</h4>
+        <p className="text-gray-400 absolute bottom-2 xl:bottom-12 text-center w-full z-1">{role}</p>
+    </div>
+  );
+}

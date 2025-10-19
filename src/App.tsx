@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ErrorPage from "./pages/ErrorPage";
+import Members from "./pages/Members";
 import Navbar from "./components/Navbar";
 import hamburgerIcon from "./assets/hamburgerIcon.svg";
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
         index: true,
         element: <HomePage />,
       },
+      {
+        path: "/members",
+        element: <Members />,
+      }
     ],
   },
 ]);

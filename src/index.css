@@ -19,6 +19,9 @@
   h3 {
     @apply font-primary text-2xl font-medium;
   }
+  h4 {
+    @apply font-primary text-xl font-medium;
+  }
   p {
     @apply font-secondary text-xs;
   }

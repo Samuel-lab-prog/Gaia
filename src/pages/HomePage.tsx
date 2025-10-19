@@ -36,20 +36,16 @@ export default function Home() {
       </section>
 
       {/* NOSSA MISSÃO */}
-      <section className="relative flex flex-col items-start justify-center p-6 z-10 bg-top bg-cover md:h-96 lg:h-146 lg:p-12 md:bg-[url(./src/assets/flavia.png)]">
+      <section className="relative flex flex-col items-start justify-center p-6 z-10 bg-top bg-cover h-70 md:h-96 lg:h-146 lg:p-12 bg-[url(./src/assets/flavia.png)]">
         <div className="absolute inset-0 bg-gradient-to-l from-black/70 to-black/100"></div>
 
         <h2 className="z-10 text-center text-white md:text-5xl">Nossa missão</h2>
-        <p className="z-10 my-2 text-gray-300 md:w-3/5 xl:w-2/5">
+        <p className="z-10 my-2 text-gray-300 w-3/5 md:w-3/5 xl:w-2/5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sed
           mollitia earum voluptatem hic dolorum natus in veritatis ipsam
           ratione!
         </p>
-        <img
-          src="./src/assets/flavia.png"
-          alt=""
-          className="w-full md:hidden"
-        />
+        
       </section>
 
       {/* MEMBROS */}
