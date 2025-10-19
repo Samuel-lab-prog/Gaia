@@ -6,7 +6,7 @@ type DropdownProps = {
 }
 
 const menuClasses =
-  "md:hidden absolute top-0 right-0 bg-black border-l-2 border-white shadow-lg p-5 mt-20 z-10 w-42 h-full flex flex-col gap-y-3 transition-transform duration-300 ease-in-out overflow-hidden"
+  "md:hidden fixed top-0 right-0 bg-black border-l-2 border-white shadow-lg px-5 pt-10 z-20 w-48 h-full flex flex-col gap-y-3 transition-transform duration-300 ease-in-out overflow-hidden"
 
 export default function Dropdown({ links, isOpen }: DropdownProps) {
   return (
@@ -15,12 +15,13 @@ export default function Dropdown({ links, isOpen }: DropdownProps) {
         isOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
+        <h2 className="text-white mb-9">Menu</h2>
       {links.map((link) => (
         <li key={link.to}>
           <Button
             to={link.to}
             variant="anchor"
-            className="text-white hover:text-gray-300" 
+            className="text-white hover:text-gray-300 text-xl w-full block" 
           >
             {link.label}
           </Button>

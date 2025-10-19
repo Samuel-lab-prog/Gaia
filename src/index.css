@@ -8,39 +8,39 @@
 }
 @layer base {
   body {
-    @apply font-secondary bg-black text-white
+    @apply font-secondary bg-black
   }
   h1 {
-    @apply font-primary text-4xl font-bold;
+    @apply font-primary font-bold text-7xl ;
   }
   h2 {
-    @apply font-primary text-3xl font-semibold;
+    @apply font-primary text-4xl font-semibold;
   }
   h3 {
     @apply font-primary text-2xl font-medium;
   }
   p {
-    @apply font-secondary text-base 
+    @apply font-secondary text-xs;
   }
 }
 
 @layer components {
   .btn {
-    @apply font-secondary px-4 py-2 rounded transition-all cursor-pointer;
+    @apply font-secondary px-4 py-2 rounded transition-all cursor-pointer inline-flex;
   }
   .btn-primary {
     @apply bg-gray-200 text-black hover:bg-gray-400;
   }
   .btn-secondary {
-    @apply bg-transparent border border-gray-200 text-gray-200 hover:bg-gray-800;
+    @apply bg-transparent border border-gray-200 text-gray-200 hover:bg-gray-100 hover:text-black;
   }
   .btn-disabled {
     @apply cursor-not-allowed;
   }
   .anchor {
-    @apply cursor-pointer;
+    @apply cursor-pointer hover:opacity-50 transition-opacity duration-200;
   }
   .active-anchor {
-    @apply underline underline-offset-4;
+    @apply underline underline-offset-4 font-bold;
   }
 }

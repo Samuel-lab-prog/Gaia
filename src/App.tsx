@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Home from "./pages/Home";
+import HomePage from "./pages/HomePage";
+import ErrorPage from "./pages/ErrorPage";
 import Navbar from "./components/Navbar";
 import hamburgerIcon from "./assets/hamburgerIcon.svg";
 
@@ -18,10 +19,11 @@ const navbarProps = {
 const router = createBrowserRouter([
   {
     path: "/",
+    errorElement: <ErrorPage />,
     element: (
       <>
         <Navbar {...navbarProps} />
-        <main>
+        <main className="">
           <Outlet />
         </main>
       </>
@@ -29,7 +31,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <HomePage />,
       },
     ],
   },

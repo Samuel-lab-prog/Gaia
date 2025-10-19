@@ -15,8 +15,8 @@ export default function Navbar({
   dropdownIconSrc,
 }: NavbarProps) {
   const navClasses =
-    "flex items-center justify-between md:justify-start bg-transparent py-2 h-20 px-4 md:px-12 border-b-2 border-white"
-  const linkListClasses = "hidden md:flex gap-x-4 md:ml-16 z-10"
+    "flex items-center justify-between md:justify-start bg-transparent py-2 h-32 px-6 fixed top-0 left-0 right-0 z-20"
+  const linkListClasses = "hidden md:flex gap-x-4 md:ml-12 z-20"
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
   function toggleDropdown() {
@@ -28,12 +28,12 @@ export default function Navbar({
       <Dropdown links={links} isOpen={isDropdownOpen} />
 
       <nav className={navClasses}>
-        <h1>{brandName}</h1>
+        <h2 className="text-white">{brandName}</h2>
 
         <ul className={linkListClasses}>
           {links.map((link) => (
             <li key={link.to}>
-              <Button to={link.to} variant="anchor">
+              <Button to={link.to} variant="anchor" className="text-white">
                 {link.label}
               </Button>
             </li>
