@@ -1,26 +1,29 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import ErrorPage from "./pages/ErrorPage";
-import MembersPage from "./pages/MembersPage";
-import Navbar from "./components/Navbar";
-import ScrollToTop from "./components/ScrollToTop";
-import AnimatedOutlet from "./components/AnimatedOutlet";
-import hamburgerIcon from "./assets/hamburgerIcon.svg";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import ErrorPage from './pages/ErrorPage';
+import MembersPage from './pages/MembersPage';
+import Navbar from './components/Navbar';
+import ScrollToTop from './components/ScrollToTop';
+import AnimatedOutlet from './components/AnimatedOutlet';
+import hamburgerIcon from './assets/hamburgerIcon.svg';
 
 const navbarProps = {
-  brandName: "Gaia",
+  brandName: 'Gaia',
   links: [
-    { label: "Início", to: "/" },
-    { label: "História", to: "/about" },  
-    { label: "Membros", to: "/members" },
-    { label: "Eventos", to: "/events" },
+    { label: 'Início', to: '/' },
+    { label: 'História', to: '/about' },
+    { label: 'Membros', to: '/members' },
+    { label: 'Eventos', to: '/events' },
   ],
-  dropdownIconSrc: hamburgerIcon
+  dropdownIconSrc: hamburgerIcon,
 };
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     errorElement: <ErrorPage />,
     element: (
       <>
@@ -35,7 +38,7 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "/members",
+        path: '/members',
         element: <MembersPage />,
       },
     ],

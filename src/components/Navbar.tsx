@@ -1,14 +1,14 @@
-import Button from "./Button"
-import Dropdown from "./Dropdown"
-import { useState } from "react"
-import { useNavigate } from "react-router-dom"
+import Button from './Button';
+import Dropdown from './Dropdown';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 type NavbarProps = {
-  brandName?: string
-  logoSrc?: string
-  links: { label: string; to: string }[]
-  dropdownIconSrc?: string
-}
+  brandName?: string;
+  logoSrc?: string;
+  links: { label: string; to: string }[];
+  dropdownIconSrc?: string;
+};
 
 export default function Navbar({
   brandName,
@@ -16,21 +16,37 @@ export default function Navbar({
   dropdownIconSrc,
 }: NavbarProps) {
   const navClasses =
-    "flex items-center justify-between md:justify-start bg-transparent py-2 h-32 px-6 fixed top-0 left-0 right-0 z-30"
-  const linkListClasses = "hidden md:flex gap-x-4 md:ml-12"
+    'flex items-center justify-between md:justify-start bg-transparent py-2 h-32 px-6 fixed top-0 left-0 right-0 z-30';
+  const linkListClasses = 'hidden md:flex gap-x-4 md:ml-12';
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
   return (
     <>
-      <Dropdown links={links} isOpen={isDropdownOpen} toggle={() => setIsDropdownOpen(false)} />
+      <Dropdown
+        links={links}
+        isOpen={isDropdownOpen}
+        toggle={() => setIsDropdownOpen(false)}
+      />
 
       <nav className={navClasses}>
-        <h2 onClick={() => {navigate("/"); setIsDropdownOpen(false)}} className="text-white hover:cursor-pointer hover:opacity-50 transition-all duration-200">{brandName}</h2>
+        <h2
+          onClick={() => {
+            navigate('/');
+            setIsDropdownOpen(false);
+          }}
+          className="text-white hover:cursor-pointer hover:opacity-50 transition-all duration-200"
+        >
+          {brandName}
+        </h2>
 
         <ul className={linkListClasses}>
           {links.map((link) => (
             <li key={link.to}>
-              <Button to={link.to} variant="anchor" className="text-white">
+              <Button
+                to={link.to}
+                variant="anchor"
+                className="text-white"
+              >
                 {link.label}
               </Button>
             </li>
@@ -43,10 +59,14 @@ export default function Navbar({
             aria-label="Toggle menu"
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
           >
-            <img src={dropdownIconSrc} alt="Dropdown" className={`h-full transition-all duration-200 ${isDropdownOpen ? "rotate-90" : ""}`} />
+            <img
+              src={dropdownIconSrc}
+              alt="Dropdown"
+              className={`h-full transition-all duration-200 ${isDropdownOpen ? 'rotate-90' : ''}`}
+            />
           </button>
         )}
       </nav>
     </>
-  )
+  );
 }

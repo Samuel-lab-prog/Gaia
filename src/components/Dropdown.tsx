@@ -1,18 +1,22 @@
-import Button from "../components/Button"
+import Button from '../components/Button';
 
 type DropdownProps = {
-  links: { label: string; to: string }[]
-  isOpen: boolean
-  toggle: () => void
-}
+  links: { label: string; to: string }[];
+  isOpen: boolean;
+  toggle: () => void;
+};
 
 const menuClasses =
-  "md:hidden fixed top-0 right-0 bg-black border-l-2 border-white shadow-lg px-5 pt-11 z-30 w-48 h-full flex flex-col gap-y-3 transition-transform duration-300 ease-in-out overflow-hidden"
+  'md:hidden fixed top-0 right-0 bg-black border-l-2 border-white shadow-lg px-5 pt-11 z-30 w-48 h-full flex flex-col gap-y-3 transition-transform duration-300 ease-in-out overflow-hidden';
 
-export default function Dropdown({ links, isOpen, toggle }: DropdownProps) {
+export default function Dropdown({
+  links,
+  isOpen,
+  toggle,
+}: DropdownProps) {
   return (
     <menu
-      className={`${menuClasses} ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+      className={`${menuClasses} ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
     >
       <div className="flex justify-between">
         <h2 className="text-white mb-8">Menu</h2>
@@ -29,5 +33,5 @@ export default function Dropdown({ links, isOpen, toggle }: DropdownProps) {
         </li>
       ))}
     </menu>
-  )
+  );
 }

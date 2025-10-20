@@ -1,39 +1,41 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from 'react-router-dom';
 
 type ButtonProps = {
-  children: React.ReactNode
-  variant?: "primary" | "secondary" | "disabled" | "anchor"
-  iconSrc?: string
-  onClick?: () => void
-  to?: string
-  href?: string
-  className?: string
-  type?: "button" | "submit" | "reset"
-}
+  children: React.ReactNode;
+  variant?: 'primary' | 'secondary' | 'disabled' | 'anchor';
+  iconSrc?: string;
+  onClick?: () => void;
+  to?: string;
+  href?: string;
+  className?: string;
+  type?: 'button' | 'submit' | 'reset';
+};
 
 export default function Button({
   children,
-  variant = "primary",
+  variant = 'primary',
   iconSrc,
   onClick,
   to,
   href,
-  className = "",
-  type = "button",
+  className = '',
+  type = 'button',
 }: ButtonProps) {
   const buttonVariants: Record<string, string> = {
-    primary: "btn btn-primary",
-    secondary: "btn btn-secondary",
-    disabled: "btn btn-disabled",
-    anchor: "anchor",
-  }
+    primary: 'btn btn-primary',
+    secondary: 'btn btn-secondary',
+    disabled: 'btn btn-disabled',
+    anchor: 'anchor',
+  };
 
   const content = (
     <>
-      {iconSrc && <img src={iconSrc} alt="icon" className="inline-block mr-2" />}
+      {iconSrc && (
+        <img src={iconSrc} alt="icon" className="inline-block mr-2" />
+      )}
       {children}
     </>
-  )
+  );
 
   if (href) {
     return (
@@ -46,7 +48,7 @@ export default function Button({
       >
         {content}
       </a>
-    )
+    );
   }
 
   if (to) {
@@ -62,17 +64,17 @@ export default function Button({
       >
         {content}
       </NavLink>
-    )
+    );
   }
 
   return (
     <button
       className={`${buttonVariants[variant]} ${className}`}
       onClick={onClick}
-      disabled={variant === "disabled"}
+      disabled={variant === 'disabled'}
       type={type}
     >
       {content}
     </button>
-  )
+  );
 }

@@ -1,17 +1,16 @@
-
-import { motion } from "framer-motion";
-import Button from "../components/Button";
+import { motion } from 'framer-motion';
+import Button from '../components/Button';
 
 export default function Home() {
   return (
     <main className="absolute w-full h-full">
       {/* HERO */}
-      <motion.section className="relative flex h-screen flex-col items-center justify-center px-6 bg-[url(./src/assets/laura.png)] bg-top bg-cover lg:bg-[url(./src/assets/flautas.png)]"
+      <motion.section
+        className="relative flex h-screen flex-col items-center justify-center px-6 bg-[url(./src/assets/laura.png)] bg-top bg-cover lg:bg-[url(./src/assets/flautas.png)]"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true, amount: 0.4 }}
-       
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/100 lg:bg-gradient-to-t lg:from-black/80 lg:to-black/50"></div>
 
@@ -27,24 +26,21 @@ export default function Home() {
       </motion.section>
 
       {/* CONHEÇA O GAIA */}
-      <motion.section className="relative flex h-78 flex-col justify-center overflow-hidden p-6 z-10 md:h-84 lg:h-116 lg:p-12"
+      <motion.section
+        className="relative flex h-78 flex-col justify-center overflow-hidden p-6 z-10 md:h-84 lg:h-116 lg:p-12"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true, amount: 0.6 }}
       >
-
         <div className="absolute top-0 right-0 hidden h-full w-4/5 z-0 bg-center bg-cover md:block md:bg-[url('/src/assets/laura2.png')]"></div>
 
-        <div className="relative z-10"
-
-        >
-
+        <div className="relative z-10">
           <h2 className="text-white md:text-5xl">Conheça o Gaia</h2>
           <p className="my-2 text-gray-300 md:my-5 md:w-3/5 xl:w-2/5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-            reprehenderit eum autem veniam ratione aspernatur vero assumenda
-            voluptas, blanditiis quo?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Eius reprehenderit eum autem veniam ratione aspernatur
+            vero assumenda voluptas, blanditiis quo?
           </p>
           <Button to="/about" variant="secondary">
             Sobre nós
@@ -62,25 +58,30 @@ export default function Home() {
       >
         <div className="absolute inset-0 bg-gradient-to-l from-black/50 to-black/100"></div>
 
-        <h2 className="z-10 text-white md:text-5xl w-3/5">Nossa missão</h2>
+        <h2 className="z-10 text-white md:text-5xl w-3/5">
+          Nossa missão
+        </h2>
         <p className="z-10 my-2 text-gray-300 w-3/5 md:w-3/5 xl:w-2/5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sed
-          mollitia earum voluptatem hic dolorum natus in veritatis ipsam
-          ratione!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+          sed mollitia earum voluptatem hic dolorum natus in veritatis
+          ipsam ratione!
         </p>
       </motion.section>
 
-
       {/* MEMBROS */}
-      <motion.section className="relative flex flex-col items-center p-6 z-10 lg:p-12"
+      <motion.section
+        className="relative flex flex-col items-center p-6 z-10 lg:p-12"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        viewport={{ once: true, amount: 0.05 }} >
-        <h2 className="text-center text-white md:text-5xl">Membros</h2>
+        viewport={{ once: true, amount: 0.05 }}
+      >
+        <h2 className="text-center text-white md:text-5xl">
+          Membros
+        </h2>
         <p className="my-2 text-center text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-          mollitia!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Veniam, mollitia!
         </p>
         <img
           src="./src/assets/membros.png"
@@ -95,7 +96,9 @@ export default function Home() {
 
       {/* REDES SOCIAIS */}
       <section className="relative flex flex-col items-center p-6 z-10 bg-neutral-950 lg:p-12">
-        <h2 className="mb-5 text-white md:text-5xl">Acompanhe a gente</h2>
+        <h2 className="mb-5 text-white md:text-5xl">
+          Acompanhe a gente
+        </h2>
 
         <div className="flex w-full items-center justify-center gap-4">
           <img
