@@ -10,7 +10,7 @@ const __dirname = dirname(__filename);
 const app = express();
 
 const indexPath = path.join(__dirname, '..', 'index.html');
-const staticPath = path.join(__dirname, '..', 'assets');
+const staticPath = path.join(__dirname, '..');
 
 app.use(express.static(staticPath));
 app.use(cors());
