@@ -16,8 +16,8 @@ export default function Navbar({
   dropdownIconSrc,
 }: NavbarProps) {
   const navClasses =
-    'flex items-center justify-between md:justify-start bg-transparent py-2 h-32 px-6 fixed top-0 left-0 right-0 z-30';
-  const linkListClasses = 'hidden md:flex gap-x-4 md:ml-12';
+    'flex items-end justify-between md:justify-start bg-transparent px-2 h-16 px-6 fixed top-0 left-0 right-0 z-30';
+  const linkListClasses = 'hidden md:flex gap-x-4 md:ml-12 mb-1';
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const navigate = useNavigate();
   return (
