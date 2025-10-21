@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="absolute w-full h-full">
       {/* HERO */}
-      <motion.section
+      <section
         className="relative flex h-screen flex-col items-center justify-center px-6 bg-[url(./src/assets/laura.png)] bg-top bg-cover lg:bg-[url(./src/assets/flautas.png)]"
       
       >
@@ -20,7 +20,7 @@ export default function Home() {
             Ver shows
           </Button>
         </div>
-      </motion.section>
+      </section>
 
       {/* CONHEÇA O GAIA */}
       <motion.section

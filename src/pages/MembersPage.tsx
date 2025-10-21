@@ -1,14 +1,9 @@
-import { motion } from 'framer-motion';
 import MemberCard from '../components/MemberCard';
 export default function Members() {
   return (
     <main className="absolute w-full h-full">
-      <motion.section
+      <section
         className="p-4 mt-32 flex flex-col items-center"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.2 }}
-        viewport={{ once: true, amount: 0.5 }}
       >
         <h2 className="text-white text-center lg:text-6xl">
           Membros
@@ -17,12 +12,9 @@ export default function Members() {
           Welcome to the members area. Here you can find exclusive
           content and features.
         </p>
-      </motion.section>
-      <motion.section
+      </section>
+      <section
         className=" p-3 grid grid-cols-2 md:grid-cols-3 gap-2 lg:gap-3 lg:px-8 xl:px-12"
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.2 }}
-        viewport={{ once: true, amount: 0.5 }}
       >
         <MemberCard
           name="Laura Fetter"
@@ -54,7 +46,7 @@ export default function Members() {
           role="Guitarrista"
           imageSrc="./src/assets/pietro.jpg"
         />
-      </motion.section>
+      </section>
     </main>
   );
 }
