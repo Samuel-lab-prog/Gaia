@@ -2,18 +2,21 @@ type MemberCardProps = {
   name: string;
   imageSrc: string;
   role: string;
+  onClick?: () => void;
 };
 
 export default function MemberCard({
   name,
   imageSrc,
   role,
+  onClick,
 }: MemberCardProps) {
   return (
     <div
       className={
         'relative hover:cursor-pointer hover:scale-105 transition-all duration-200 hover:border-white hover:border-2 rounded-lg hover:z-10 opacity-70 hover:opacity-100 overflow-hidden   '
       }
+      onClick={onClick}
     >
       <div className="absolute inset-0 bg-linear-to-b from-black/0 to-black/90 transition-all duration-300"></div>
       <img

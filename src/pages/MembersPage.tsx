@@ -1,10 +1,12 @@
+import { useNavigate } from 'react-router-dom';
 import MemberCard from '../components/MemberCard';
+import {members} from '../data/members';
 export default function Members() {
+  const navigate = useNavigate();
+
   return (
     <main className="absolute w-full h-full">
-      <section
-        className="p-4 mt-32 flex flex-col items-center"
-      >
+      <section className="p-4 mt-24 flex flex-col items-center">
         <h2 className="text-white text-center lg:text-6xl">
           Membros
         </h2>
@@ -13,39 +15,16 @@ export default function Members() {
           content and features.
         </p>
       </section>
-      <section
-        className=" p-3 grid grid-cols-2 md:grid-cols-3 gap-2 lg:gap-3 lg:px-8 xl:px-12"
-      >
-        <MemberCard
-          name="Laura Fetter"
-          role="Vocalista"
-          imageSrc="./src/assets/laura.png"
-        />
-        <MemberCard
-          name="Maurício"
-          role="Guitarrista"
-          imageSrc="./src/assets/mauricio.png"
-        />
-        <MemberCard
-          name="Leonel"
-          role="Violinista"
-          imageSrc="./src/assets/leonel.png"
-        />
-        <MemberCard
-          name="Richard"
-          role="Baixista"
-          imageSrc="./src/assets/richard.jpg"
-        />
-        <MemberCard
-          name="Manuela"
-          role="Guitarrista"
-          imageSrc="./src/assets/manuela.jpg"
-        />
-        <MemberCard
-          name="Pietro"
-          role="Guitarrista"
-          imageSrc="./src/assets/pietro.jpg"
-        />
+      <section className=" p-3 grid grid-cols-2 md:grid-cols-3 gap-2 lg:gap-3 lg:px-8 xl:px-12">
+        {members.map((member: { name: string; role: string; imageSrc: string }) => (
+          <MemberCard
+            key={member.name}
+            name={member.name}
+            role={member.role}
+            imageSrc={member.imageSrc}
+            onClick={() => navigate(`/members/${member.name}`)}
+          />
+        ))}
       </section>
     </main>
   );

@@ -5,6 +5,7 @@ import {
 import HomePage from './pages/HomePage';
 import ErrorPage from './pages/ErrorPage';
 import MembersPage from './pages/MembersPage';
+import MemberDetails from './pages/MemberDetails';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 import AnimatedOutlet from './components/AnimatedOutlet';
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: '/members',
         element: <MembersPage />,
+      },
+      {
+        path: '/members/:memberName',
+        element: <MemberDetails />,
       },
     ],
   },

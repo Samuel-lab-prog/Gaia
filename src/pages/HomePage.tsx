@@ -5,10 +5,7 @@ export default function Home() {
   return (
     <main className="absolute w-full h-full">
       {/* HERO */}
-      <section
-        className="relative flex h-screen flex-col items-center justify-center px-6 bg-[url(./src/assets/laura.png)] bg-top bg-cover lg:bg-[url(./src/assets/flautas.png)]"
-      
-      >
+      <section className="relative flex h-screen flex-col items-center justify-center px-6 bg-[url(./src/assets/laura.png)] bg-top bg-cover lg:bg-[url(./src/assets/flautas.png)]">
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/100 lg:bg-gradient-to-t lg:from-black/80 lg:to-black/50"></div>
 
         <div className="relative z-10 text-center">
