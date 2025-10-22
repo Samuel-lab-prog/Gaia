@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import MemberCard from '../components/MemberCard';
-import {members} from '../data/members';
+import { members } from '../data/members';
 export default function Members() {
   const navigate = useNavigate();
 
@@ -16,15 +16,21 @@ export default function Members() {
         </p>
       </section>
       <section className=" p-3 grid grid-cols-2 md:grid-cols-3 gap-2 lg:gap-3 lg:px-8 xl:px-12">
-        {members.map((member: { name: string; role: string; imageSrc: string }) => (
-          <MemberCard
-            key={member.name}
-            name={member.name}
-            role={member.role}
-            imageSrc={member.imageSrc}
-            onClick={() => navigate(`/members/${member.name}`)}
-          />
-        ))}
+        {members.map(
+          (member: {
+            name: string;
+            role: string;
+            imageSrc: string;
+          }) => (
+            <MemberCard
+              key={member.name}
+              name={member.name}
+              role={member.role}
+              imageSrc={member.imageSrc}
+              onClick={() => navigate(`/members/${member.name}`)}
+            />
+          )
+        )}
       </section>
     </main>
   );
