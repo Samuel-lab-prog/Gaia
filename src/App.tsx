@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import ErrorPage from './pages/ErrorPage';
 import MembersPage from './pages/MembersPage';
 import MemberDetails from './pages/MemberDetails';
+import ShowsPage from './pages/ShowsPage';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 import AnimatedOutlet from './components/AnimatedOutlet';
@@ -17,7 +18,7 @@ const navbarProps = {
     { label: 'Início', to: '/' },
     { label: 'História', to: '/about' },
     { label: 'Membros', to: '/members' },
-    { label: 'Eventos', to: '/events' },
+    { label: 'Shows', to: '/shows' },
   ],
   dropdownIconSrc: hamburgerIcon,
 };
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: '/members/:memberName',
         element: <MemberDetails />,
+      },
+      {
+        path: '/shows',
+        element: <ShowsPage />,
       },
     ],
   },

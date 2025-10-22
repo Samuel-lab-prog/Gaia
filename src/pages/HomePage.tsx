@@ -13,7 +13,7 @@ export default function Home() {
           <p className="mb-4 text-gray-300 lg:text-base">
             Grupo instrumental do IFRS campus Osório
           </p>
-          <Button to="/about" variant="secondary">
+          <Button to="/shows" variant="secondary">
             Ver shows
           </Button>
         </div>
