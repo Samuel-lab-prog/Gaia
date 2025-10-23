@@ -23,13 +23,16 @@
     @apply font-primary text-xl font-medium;
   }
   p {
-    @apply font-secondary text-xs;
+    @apply font-secondary text-xs lg:text-sm;
+  }
+  span {
+    @apply font-secondary text-xs lg:text-sm font-bold; 
   }
 }
 
 @layer components {
   .btn {
-    @apply font-secondary px-3 py-1 rounded transition-all cursor-pointer inline-flex text-sm;
+    @apply font-secondary px-4 py-2 rounded transition-all cursor-pointer inline-flex items-center justify-center text-sm;
   }
   .btn-primary {
     @apply bg-gray-200 text-black hover:bg-gray-400;

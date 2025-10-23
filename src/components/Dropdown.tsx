@@ -7,7 +7,7 @@ type DropdownProps = {
 };
 
 const menuClasses =
-  'md:hidden fixed top-0 right-0 bg-black border-l-2 border-white shadow-lg px-5 pt-11 z-30 w-48 h-full flex flex-col gap-y-3 transition-transform duration-300 ease-in-out overflow-hidden';
+  'md:hidden fixed top-0 right-0 bg-black border-l-2 border-white shadow-lg px-5 pt-5 z-30 w-48 h-full flex flex-col gap-y-3 transition-transform duration-300 ease-in-out overflow-hidden';
 
 export default function Dropdown({
   links,
@@ -19,7 +19,7 @@ export default function Dropdown({
       className={`${menuClasses} ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
     >
       <div className="flex justify-between">
-        <h2 className="text-white mb-8">Menu</h2>
+        <h2 className="text-white mb-4">Menu</h2>
       </div>
       {links.map((link) => (
         <li key={link.to} onClick={toggle}>

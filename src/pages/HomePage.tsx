@@ -4,7 +4,6 @@ import Button from '../components/Button';
 export default function Home() {
   return (
     <main className="absolute w-full h-full">
-      {/* HERO */}
       <section className="relative flex h-screen flex-col items-center justify-center px-6 bg-[url(./src/assets/laura.png)] bg-top bg-cover lg:bg-[url(./src/assets/flautas.png)]">
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/100 lg:bg-gradient-to-t lg:from-black/80 lg:to-black/50"></div>
 
@@ -19,7 +18,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONHEÇA O GAIA */}
       <motion.section
         className="relative flex h-78 flex-col justify-center overflow-hidden p-6 z-10 md:h-84 lg:h-116 lg:p-12"
         initial={{ opacity: 0, y: 50 }}
@@ -42,7 +40,6 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* NOSSA MISSÃO */}
       <motion.section
         className="relative flex flex-col items-start justify-center p-6 z-10 bg-top bg-cover h-70 md:h-96 lg:h-146 lg:p-12 bg-[url(./src/assets/flavia.png)]"
         initial={{ opacity: 0, y: 50 }}
@@ -62,7 +59,6 @@ export default function Home() {
         </p>
       </motion.section>
 
-      {/* MEMBROS */}
       <motion.section
         className="relative flex flex-col items-center p-6 z-10 lg:p-12"
         initial={{ opacity: 0, y: 100 }}
@@ -88,7 +84,6 @@ export default function Home() {
         </Button>
       </motion.section>
 
-      {/* REDES SOCIAIS */}
       <section className="relative flex flex-col items-center p-6 z-10 bg-neutral-950 lg:p-12">
         <h2 className="mb-5 text-white md:text-5xl">
           Acompanhe a gente

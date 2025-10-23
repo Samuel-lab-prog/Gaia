@@ -14,7 +14,7 @@ export default function MemberDetails() {
 
   return !isTablet ? (
     <main className="absolute w-full h-fit">
-      <section className="p-4 mt-24 flex flex-col items-center h-full">
+      <section className="p-4 mt-24 lg:p-8 flex flex-col items-center h-full">
         <h2 className="text-white text-center">{memberName}</h2>
         <p className="text-gray-300 text-center">{member.role}</p>
         <div className="flex flex-col items-center ">
@@ -41,10 +41,10 @@ export default function MemberDetails() {
     </main>
   ) : (
     <main className="absolute w-full h-full mt-24">
-      <section className="p-4 grid grid-cols-2 gap-x-2 h-fit xl:grid-cols-5">
-        <div className="flex flex-col items-start relative h-120 xl:col-span-2">
+      <section className="px-4 lg:px-12 grid grid-cols-2 gap-x-2 h-fit xl:grid-cols-5">
+        <div className="flex flex-col items-start justify-center relative h-120 xl:col-span-2">
           <h2 className="text-white text-center">{memberName}</h2>
-          <p className="text-gray-300">{member.role}</p>
+          <span className="text-white">{member.role}</span>
           <p className="my-4 text-gray-300 text-justify">
             {member.description1}
           </p>
@@ -52,7 +52,7 @@ export default function MemberDetails() {
             {member.description2}
           </p>
           <Button
-            className="w-30 absolute bottom-0 mt-2 h-12 flex justify-center items-center col-span-2"
+            className="w-30 absolute bottom-0 mt-2 h-12 flex justify-center items-center col-span-2 md:hidden"
             variant="secondary"
             onClick={() => navigate(-1)}
           >

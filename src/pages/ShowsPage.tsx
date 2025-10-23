@@ -1,15 +1,13 @@
-import Button from "../components/Button";
-import ShowCard from "../components/ShowCard";
-import { shows } from "../data/shows";
-import { useNavigate } from "react-router-dom";
+import Button from '../components/Button';
+import ShowCard from '../components/ShowCard';
+import { shows } from '../data/shows';
+import { useNavigate } from 'react-router-dom';
 export default function ShowsPage() {
   const navigate = useNavigate();
   return (
     <main className="absolute w-full h-full">
-      <section className="p-4 mt-24 flex flex-col items-center">
-        <h2 className="text-white text-center lg:text-6xl">
-          Shows
-        </h2>
+      <section className="p-4 lg:px-12 mt-24 flex flex-col items-center">
+        <h2 className="text-white text-center lg:text-6xl">Shows</h2>
         <p className="text-gray-300 text-center md:w-4/5 lg:w-2/5">
           Check out our upcoming shows and events.
         </p>
@@ -28,7 +26,13 @@ export default function ShowsPage() {
             )
           )}
         </div>
-        <Button variant="secondary" className="w-full md:hidden flex items-center justify-center h-12 mt-4" onClick={() => navigate(-1)}>Voltar</Button>
+        <Button
+          variant="secondary"
+          className="w-full md:hidden flex items-center justify-center h-12 mt-4"
+          onClick={() => navigate(-1)}
+        >
+          Voltar
+        </Button>
       </section>
     </main>
   );

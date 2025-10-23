@@ -7,6 +7,7 @@ import ErrorPage from './pages/ErrorPage';
 import MembersPage from './pages/MembersPage';
 import MemberDetails from './pages/MemberDetails';
 import ShowsPage from './pages/ShowsPage';
+import AboutPage from './pages/AboutPage';
 import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 import AnimatedOutlet from './components/AnimatedOutlet';
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: '/shows',
         element: <ShowsPage />,
+      },
+      {
+        path: '/about',
+        element: <AboutPage />,
       },
     ],
   },

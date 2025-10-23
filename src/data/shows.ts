@@ -1,4 +1,3 @@
-
 export const shows = [
   {
     date: '24/08',
