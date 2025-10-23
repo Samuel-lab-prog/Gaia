@@ -9,9 +9,14 @@ const __dirname = dirname(__filename);
 
 const app = express();
 
+const indexPath = path.join(__dirname, '..', 'index.html');
+const staticPath = path.join(__dirname, '..', 'assets');
+
+app.use(express.static(staticPath));
 app.use(cors());
-app.use(express.static(path.join(__dirname, '..', 'dist')));
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'));
+  res.sendFile(indexPath);
 });
 export default app;
+console.log(indexPath);
+console.log(staticPath);
