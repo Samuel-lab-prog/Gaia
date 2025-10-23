@@ -19,7 +19,9 @@ export default function Home() {
       >
         <div
           className="hidden lg:block absolute inset-0 bg-top bg-cover"
-          style={{ backgroundImage: `url(${flautas})` }}
+          style={{
+            backgroundImage: `url(${flautas})`,
+          }}
         ></div>
 
         <div className="absolute inset-0 bg-linear-to-b from-black/70 to-black lg:bg-linear-to-t lg:from-black/80 lg:to-black/50"></div>
@@ -63,7 +65,9 @@ export default function Home() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true, amount: 0.3 }}
-        style={{ backgroundImage: `url(${flavia})` }}
+        style={{
+          backgroundImage: `url(${flavia})`,
+        }}
       >
         <div className="absolute inset-0 bg-linear-to-l from-black/50 to-black"></div>
 
@@ -102,16 +106,17 @@ export default function Home() {
         </Button>
       </motion.section>
 
-      <motion.section className="relative flex flex-col items-center p-6 z-10 bg-neutral-950 lg:p-12"
+      <motion.section
+        className="relative flex flex-col items-center p-6 z-10 bg-neutral-950 lg:p-12"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true, amount: 0.05 }}
       >
-        <h2 className=" text-white md:text-5xl">
-          Acompanhe a gente
-        </h2>
-        <p className='text-gray-300 my-4'>Fique por dentro das novidades e atualizações do Gaia.</p>
+        <h2 className=" text-white md:text-5xl">Acompanhe a gente</h2>
+        <p className="text-gray-300 my-4">
+          Fique por dentro das novidades e atualizações do Gaia.
+        </p>
 
         <div className="flex w-full items-center justify-center gap-4">
           <img

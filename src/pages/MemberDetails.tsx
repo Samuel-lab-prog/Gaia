@@ -7,7 +7,9 @@ export default function MemberDetails() {
   const { memberName } = useParams();
   const member = members.find((m) => m.name === memberName);
   const navigate = useNavigate();
-  const isTablet = useMediaQuery({ query: '(min-width: 768px)' });
+  const isTablet = useMediaQuery({
+    query: '(min-width: 768px)',
+  });
   if (!member) {
     throw new Error('Membro não encontrado');
   }
