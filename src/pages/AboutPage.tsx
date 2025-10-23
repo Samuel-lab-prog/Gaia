@@ -10,8 +10,7 @@ export default function AboutPage() {
           História
         </h2>
         <p className="text-gray-300 text-center">
-          Learn more about our band, our journey, and what drives us
-          to create
+          Aprenda mais sobre nosso grupo, jornada e inspiração
         </p>
       </section>
       <section className="m-4 xl:m-8 relative flex flex-col justify-center pb-16 md:pb-0 max-w-200 ">
@@ -34,20 +33,12 @@ export default function AboutPage() {
         <h3 className="text-white lg:text-4xl">Nossos Valores</h3>
         <p className="text-gray-300 mb-4 text-justify leading-5">
           Acreditamos no poder da música como uma forma de expressão e
-          conexão humana. Sabemos que Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Numquam officiis reiciendis
-          aperiam eos necessitatibus officia aspernatur dolorum
-          pariatur commodi, voluptate soluta minus praesentium,
-          corporis ducimus similique. A, unde hic. Sed.
+          conexão humana. Sabemos que a arte é uma ferramenta importante
+          para disseminação de assuntos de extrema importância, assim como acolhedora,
+          por isso nossas canções abordam temas relevantes para a sociedade
+          que prezam o respeito e a diversidade.
         </p>
-        <p className="text-gray-300 mb-4 text-justify leading-5">
-          Acreditamos no poder da música como uma forma de expressão e
-          conexão humana. Sabemos que Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Numquam officiis reiciendis
-          aperiam eos necessitatibus officia aspernatur dolorum
-          pariatur commodi, voluptate soluta minus praesentium,
-          corporis ducimus similique. A, unde hic. Sed.
-        </p>
+         
         <Image
           src={laura2}
           alt="Descrição da imagem"
@@ -63,6 +54,15 @@ export default function AboutPage() {
           crescer como artistas e como indivíduos, sempre buscando
           novas formas de nos expressar e conectar com nosso público.
         </p>
+        <br></br>
+
+        <h3 className="text-white lg:text-4xl">Agradecimentos</h3>
+        <p className="text-gray-300 mb-4 text-justify leading-5">
+          Agradecemos à nossa amada e eterna professora Agnes Schmeling por ter apoiado com paixão nosso
+          projeto durante sua vida, ao professor Rafael Palmeira pelo apoio
+          e auxílio nos ensaios, e também à instituição IFRS que torna a realização
+          disso possível e em nenhum momento deixou a música morrer dentro do câmpus.
+       </p>
         <Button
           variant="secondary"
           to="/"
