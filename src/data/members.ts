@@ -43,21 +43,21 @@ export const members = [
       'Com uma forte influência do rock e funk, ele adiciona uma dimensão única ao som da banda.',
   },
   {
-    name: 'Manuela',
-    role: 'Guitarrista',
+    name: 'Samuel',
+    role: 'Pianista',
     imageSrc: manuela,
     description1:
-      'Manuela é a talentosa guitarrista da banda Gaia, conhecida por seus riffs criativos e estilo único.',
+      'Samuel é o talentoso pianistaa da banda Gaia, conhecida por suas habilidades em peças complexas de musica clássica e estilo único.',
     description2:
       'Sua paixão pela música a leva a explorar diferentes gêneros e técnicas.',
   },
   {
-    name: 'Pietro',
-    role: 'Guitarrista',
+    name: 'Helena',
+    role: 'Violinista',
     imageSrc: pietro,
     description1:
-      'Pietro é o guitarrista da banda Gaia, reconhecido por sua habilidade em criar melodias cativantes.',
+      'Helena é a segunda violinista da banda Gaia, reconhecido por sua habilidade em criar melodias cativantes nas quatro cordas do instrumento.',
     description2:
-      'Com uma abordagem inovadora, ele traz frescor às composições da banda.',
+      'Com uma abordagem inovadora, ela traz frescor às composições da banda misturando diversos estilos em seu instrumento.',
   },
 ];

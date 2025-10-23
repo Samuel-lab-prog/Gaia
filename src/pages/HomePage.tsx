@@ -27,7 +27,7 @@ export default function Home() {
         <div className="relative z-10 text-center">
           <h1 className="text-white lg:text-9xl">Gaia</h1>
           <p className="mb-4 text-gray-300 lg:text-base">
-            Grupo instrumental do IFRS campus Osório
+            Grupo Instrumental do IFRS campus Osório
           </p>
           <Button to="/shows" variant="secondary">
             Ver shows
@@ -47,9 +47,7 @@ export default function Home() {
         <div className="relative z-10">
           <h2 className="text-white md:text-5xl">Conheça o Gaia</h2>
           <p className="my-2 text-gray-300 md:my-5 md:w-3/5 xl:w-2/5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eius reprehenderit eum autem veniam ratione aspernatur
-            vero assumenda voluptas, blanditiis quo?
+            Fique por dentro do aclamado Grupo Instrumental oficial do IFRS Campus Osório, conhecido por trazer a sua musicalidade de forma emocionante e acolhedora para os estudantes dos IFRS e jovens do estado. Sempre relembrando a memória da professora Agnes Schmeling que nos serve de inspiração para a continuidade do projeto. 
           </p>
           <Button to="/about" variant="secondary">
             Sobre nós
@@ -71,9 +69,7 @@ export default function Home() {
           Nossa missão
         </h2>
         <p className="z-10 my-2 text-gray-300 w-3/5 md:w-3/5 xl:w-2/5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-          sed mollitia earum voluptatem hic dolorum natus in veritatis
-          ipsam ratione!
+          Desejamos transmitir conhecimento e experiência musical para os estudantes do IFRS Câmpus Osório, com a tematica sendo escolhida anualmente pelos integrantes do grupo. No ano de 2025 queremos apresentar a musicalidade e a "Arte como Forma de Protesto".
         </p>
       </motion.section>
 
@@ -87,9 +83,8 @@ export default function Home() {
         <h2 className="text-center text-white md:text-5xl">
           Membros
         </h2>
-        <p className="my-2 text-center text-gray-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Veniam, mollitia!
+        <p className="my-2 text-center text-gray-300 xl:w-3/5 ">
+          Os integrantes são todos estudantes de ensino médio e superior do IFRS Câmpus Osório, que, unidos pela paixão pela música, compoem juntos o Grupo Instrumental GAIA.
         </p>
         <img
           src={membros}
@@ -111,7 +106,7 @@ export default function Home() {
         <h2 className=" text-white md:text-5xl">
           Acompanhe a gente
         </h2>
-        <p className='text-gray-300 my-4'>Fique por dentro das novidades e atualizações do Gaia.</p>
+        <p className='text-gray-300 my-4'>Esteja ligado nas novidades e atualizações do Gaia.</p>
 
         <div className="flex w-full items-center justify-center gap-4">
           <img
