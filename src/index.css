@@ -26,7 +26,7 @@
     @apply font-secondary text-xs lg:text-sm;
   }
   span {
-    @apply font-secondary text-xs lg:text-sm font-bold; 
+    @apply font-secondary text-xs lg:text-sm font-bold;
   }
 }
 

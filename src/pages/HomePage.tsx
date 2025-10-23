@@ -35,7 +35,6 @@ export default function Home() {
         </div>
       </section>
 
-
       <motion.section
         className="relative flex h-78 flex-col justify-center overflow-hidden p-6 z-10 md:h-84 lg:h-116 lg:p-12"
         initial={{ opacity: 0, y: 50 }}
