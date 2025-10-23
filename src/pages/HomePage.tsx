@@ -103,9 +103,10 @@ export default function Home() {
       </motion.section>
 
       <section className="relative flex flex-col items-center p-6 z-10 bg-neutral-950 lg:p-12">
-        <h2 className="mb-5 text-white md:text-5xl">
+        <h2 className=" text-white md:text-5xl">
           Acompanhe a gente
         </h2>
+        <p className='text-gray-300 my-4'>Fique por dentro das novidades e atualizações do Gaia.</p>
 
         <div className="flex w-full items-center justify-center gap-4">
           <img
@@ -127,21 +128,6 @@ export default function Home() {
             loading="lazy"
           />
         </div>
-
-        <p className="my-2 text-gray-300">
-          Informe seu e-mail para receber novidades:
-        </p>
-
-        <form className="flex w-full flex-col items-center lg:w-1/2">
-          <input
-            type="email"
-            placeholder="Seu e-mail"
-            className="input-text mb-3 w-full"
-          />
-          <Button variant="secondary" type="submit">
-            Inscrever-se
-          </Button>
-        </form>
       </section>
     </main>
   );
