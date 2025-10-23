@@ -1,5 +1,5 @@
 import laura from '../assets/laura.webp';
-import mauricio from '../assets/mauricio.png';
+import mauricio from '../assets/mauricio.webp';
 import leonel from '../assets/leonel.webp';
 import richard from '../assets/richard.jpg';
 import manuela from '../assets/manuela.jpg';

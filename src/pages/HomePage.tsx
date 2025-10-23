@@ -102,7 +102,12 @@ export default function Home() {
         </Button>
       </motion.section>
 
-      <section className="relative flex flex-col items-center p-6 z-10 bg-neutral-950 lg:p-12">
+      <motion.section className="relative flex flex-col items-center p-6 z-10 bg-neutral-950 lg:p-12"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true, amount: 0.05 }}
+      >
         <h2 className=" text-white md:text-5xl">
           Acompanhe a gente
         </h2>
@@ -128,7 +133,7 @@ export default function Home() {
             loading="lazy"
           />
         </div>
-      </section>
+      </motion.section>
     </main>
   );
 }
