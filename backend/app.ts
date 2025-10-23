@@ -14,9 +14,8 @@ const staticPath = path.join(__dirname, '..');
 
 app.use(express.static(staticPath));
 app.use(cors());
-app.get('/', (req, res) => {
+app.get('/', (_req, res) => {
   res.sendFile(indexPath);
 });
 export default app;
-console.log(indexPath);
-console.log(staticPath);
+

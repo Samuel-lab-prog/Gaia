@@ -7,8 +7,14 @@
     "rootDir": "backend",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "allowArbitraryExtensions": true,
+
     "strict": true,
-    "allowArbitraryExtensions": true
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
   },
   "include": ["backend/**/*"]
 }

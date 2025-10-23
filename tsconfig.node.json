@@ -7,7 +7,6 @@
     "types": ["node"],
     "skipLibCheck": true,
     "outDir": "dist",
-    
 
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
