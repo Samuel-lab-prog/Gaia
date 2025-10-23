@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import Button from '../components/Button';
-import flavia from '../assets/flavia.png';
-import membros from '../assets/membros.png';
+import flavia from '../assets/flavia.webp';
+import membros from '../assets/membros.webp';
 import facebook from '../assets/facebook.svg';
 import youtube from '../assets/youtube.svg';
 import instagram from '../assets/instagram.svg';
-import flautas from '../assets/flautas.png';
-import laura from '../assets/laura.png';
+import flautas from '../assets/flautas.webp';
+import laura from '../assets/laura.webp';
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
           style={{ backgroundImage: `url(${flautas})` }}
         ></div>
 
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/100 lg:bg-gradient-to-t lg:from-black/80 lg:to-black/50"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-black/70 to-black lg:bg-linear-to-t lg:from-black/80 lg:to-black/50"></div>
 
         <div className="relative z-10 text-center">
           <h1 className="text-white lg:text-9xl">Gaia</h1>
@@ -42,7 +42,7 @@ export default function Home() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true, amount: 0.6 }}
       >
-        <div className="absolute top-0 right-0 hidden h-full w-4/5 z-0 bg-center bg-cover md:block md:bg-[url('/src/assets/laura2.png')]"></div>
+        <div className="absolute top-0 right-0 hidden h-full w-4/5 z-0 bg-center bg-cover md:block md:bg-[url('/src/assets/laura2.webp')]"></div>
 
         <div className="relative z-10">
           <h2 className="text-white md:text-5xl">Conheça o Gaia</h2>
@@ -65,7 +65,7 @@ export default function Home() {
         viewport={{ once: true, amount: 0.3 }}
         style={{ backgroundImage: `url(${flavia})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-l from-black/50 to-black/100"></div>
+        <div className="absolute inset-0 bg-linear-to-l from-black/50 to-black"></div>
 
         <h2 className="z-10 text-white md:text-5xl w-3/5">
           Nossa missão

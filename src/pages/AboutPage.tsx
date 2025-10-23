@@ -1,6 +1,6 @@
 import Image from '../components/Image';
 import Button from '../components/Button';
-import laura2 from '../assets/laura2.png';
+import laura2 from '../assets/laura2.webp';
 export default function AboutPage() {
   return (
     <main className="absolute w-full h-fit flex flex-col items-center">
