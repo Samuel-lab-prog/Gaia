@@ -1,6 +1,6 @@
 import Button from './Button';
 import Dropdown from './Dropdown';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 type NavbarProps = {
@@ -15,10 +15,32 @@ export default function Navbar({
   links,
   dropdownIconSrc,
 }: NavbarProps) {
-  const navClasses =
-    'flex items-end justify-between md:justify-start bg-transparent h-16 px-6 fixed top-0 left-0 right-0 z-30';
-  const linkListClasses = 'hidden md:flex gap-x-4 md:ml-12 mb-1';
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState<
+    'up' | 'down' | null
+  >('up');
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    function handleScroll() {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) setScrollDirection('down');
+      else if (currentScrollY < lastScrollY) setScrollDirection('up');
+      lastScrollY = currentScrollY;
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const navClasses =
+    'flex items-end justify-between md:justify-start bg-transparent h-16 px-6 fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out' +
+    (scrollDirection === 'down'
+      ? ' translate-y-[-100%]'
+      : 'translate-y-0');
+  const linkListClasses = 'hidden md:flex gap-x-4 md:ml-12 mb-1';
   const navigate = useNavigate();
   return (
     <>
