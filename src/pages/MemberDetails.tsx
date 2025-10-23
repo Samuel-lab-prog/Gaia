@@ -42,7 +42,7 @@ export default function MemberDetails() {
   ) : (
     <main className="absolute w-full h-full mt-24">
       <section className="px-4 lg:px-12 grid grid-cols-2 gap-x-2 h-fit xl:grid-cols-5">
-        <div className="flex flex-col items-start justify-center relative h-120 xl:col-span-2">
+        <div className="flex flex-col items-start justify-center relative h-120 xl:col-span-2 lg:pr-8">
           <h2 className="text-white text-center">{memberName}</h2>
           <span className="text-white">{member.role}</span>
           <p className="my-4 text-gray-300 text-justify">

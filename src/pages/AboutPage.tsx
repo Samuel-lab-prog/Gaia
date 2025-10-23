@@ -1,5 +1,6 @@
 import Image from '../components/Image';
 import Button from '../components/Button';
+import laura2 from '../assets/laura2.png';
 export default function AboutPage() {
   return  (
     <main className="absolute w-full h-fit flex flex-col items-center">
@@ -23,7 +24,7 @@ export default function AboutPage() {
           e emoções.
         </p>
         <Image
-          src="./src/assets/laura2.png"
+          src={laura2}
           alt="Descrição da imagem"
           caption="Laura na apresentação de Bento Gonçalves"
           className="w-full h-auto mb-4 flex flex-col items-center"
@@ -46,7 +47,7 @@ export default function AboutPage() {
           corporis ducimus similique. A, unde hic. Sed.
         </p>
         <Image
-          src="./src/assets/laura2.png"
+          src={laura2}
           alt="Descrição da imagem"
           caption="Laura na apresentação de Bento Gonçalves"
           className="w-full h-auto mb-4 flex flex-col items-center"

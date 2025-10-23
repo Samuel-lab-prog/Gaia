@@ -1,10 +1,27 @@
 import { motion } from 'framer-motion';
 import Button from '../components/Button';
+import flavia from '../assets/flavia.png';
+import membros from '../assets/membros.png';
+import facebook from '../assets/facebook.svg';
+import youtube from '../assets/youtube.svg';
+import instagram from '../assets/instagram.svg';
+import flautas from '../assets/flautas.png';
+import laura from '../assets/laura.png';
 
 export default function Home() {
   return (
     <main className="absolute w-full h-full">
-      <section className="relative flex h-screen flex-col items-center justify-center px-6 bg-[url(./src/assets/laura.png)] bg-top bg-cover lg:bg-[url(./src/assets/flautas.png)]">
+      <section
+        className="relative flex h-screen flex-col items-center justify-center px-6 bg-top bg-cover"
+        style={{
+          backgroundImage: `url(${laura})`,
+        }}
+      >
+        <div
+          className="hidden lg:block absolute inset-0 bg-top bg-cover"
+          style={{ backgroundImage: `url(${flautas})` }}
+        ></div>
+
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/100 lg:bg-gradient-to-t lg:from-black/80 lg:to-black/50"></div>
 
         <div className="relative z-10 text-center">
@@ -17,6 +34,7 @@ export default function Home() {
           </Button>
         </div>
       </section>
+
 
       <motion.section
         className="relative flex h-78 flex-col justify-center overflow-hidden p-6 z-10 md:h-84 lg:h-116 lg:p-12"
@@ -41,11 +59,12 @@ export default function Home() {
       </motion.section>
 
       <motion.section
-        className="relative flex flex-col items-start justify-center p-6 z-10 bg-top bg-cover h-70 md:h-96 lg:h-146 lg:p-12 bg-[url(./src/assets/flavia.png)]"
+        className="relative flex flex-col items-start justify-center p-6 z-10 bg-top bg-cover h-70 md:h-96 lg:h-146 lg:p-12"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true, amount: 0.3 }}
+        style={{ backgroundImage: `url(${flavia})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-l from-black/50 to-black/100"></div>
 
@@ -74,7 +93,7 @@ export default function Home() {
           Veniam, mollitia!
         </p>
         <img
-          src="./src/assets/membros.png"
+          src={membros}
           alt=""
           className="mb-4 w-full lg:w-4/5"
           loading="lazy"
@@ -91,19 +110,19 @@ export default function Home() {
 
         <div className="flex w-full items-center justify-center gap-4">
           <img
-            src="./src/assets/instagram.svg"
+            src={instagram}
             alt="Instagram"
             className="w-10 hover:cursor-pointer hover:opacity-50"
             loading="lazy"
           />
           <img
-            src="./src/assets/facebook.svg"
+            src={facebook}
             alt="Facebook"
             className="w-10 hover:cursor-pointer hover:opacity-50"
             loading="lazy"
           />
           <img
-            src="./src/assets/youtube.svg"
+            src={youtube}
             alt="YouTube"
             className="w-10 hover:cursor-pointer hover:opacity-50"
             loading="lazy"
