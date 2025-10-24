@@ -111,24 +111,28 @@ export default function Home() {
         <p className='text-gray-300 my-4'>Esteja ligado nas novidades e atualizações do Gaia.</p>
 
         <div className="flex w-full items-center justify-center gap-4">
+          <a href="https://www.instagram.com/gaia.ifrs.osorio/" target="_blank" rel="noopener noreferrer">
           <img
             src={instagram}
             alt="Instagram"
             className="w-10 hover:cursor-pointer hover:opacity-50"
             loading="lazy"
           />
+          </a>
           <img
             src={facebook}
             alt="Facebook"
             className="w-10 hover:cursor-pointer hover:opacity-50"
             loading="lazy"
           />
+          <a href="https://www.youtube.com/@GrupoInstrumentalGaia" target="_blank" rel="noopener noreferrer">
           <img
             src={youtube}
             alt="YouTube"
             className="w-10 hover:cursor-pointer hover:opacity-50"
             loading="lazy"
           />
+          </a>
         </div>
       </motion.section>
     </main>

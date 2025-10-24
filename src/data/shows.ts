@@ -1,7 +1,7 @@
 export const shows = [
   {
     date: '07/10',
-    time: '20:00',
+    time: '19:30',
     location: 'Bento Gonçalves-RS',
     venue: 'Casa das Artes',
   },
