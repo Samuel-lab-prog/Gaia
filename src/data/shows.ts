@@ -1,9 +1,9 @@
 export const shows = [
   {
-    date: '24/08',
-    time: '20:00',
-    location: 'São Paulo-SP',
-    venue: 'Espaço das Américas',
+    date: '07/10',
+    time: '19:30',
+    location: 'Bento Gonçalves-RS',
+    venue: 'Casa das Artes',
   },
   {
     date: '15/09',

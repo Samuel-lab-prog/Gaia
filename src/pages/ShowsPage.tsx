@@ -9,7 +9,7 @@ export default function ShowsPage() {
       <section className="p-4 lg:px-12 mt-24 flex flex-col items-center">
         <h2 className="text-white text-center lg:text-6xl">Shows</h2>
         <p className="text-gray-300 text-center md:w-4/5 lg:w-2/5">
-          Confira nossos próximos shows e eventos!
+          Cheque as novas apresentações do Grupo GAIA.
         </p>
         <div className="flex flex-col items-center mt-6 w-full">
           {shows.map(

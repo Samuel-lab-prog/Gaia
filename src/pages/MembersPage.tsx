@@ -11,8 +11,7 @@ export default function Members() {
           Membros
         </h2>
         <p className="text-gray-300 text-center md:w-4/5 lg:w-2/5">
-          Welcome to the members area. Here you can find exclusive
-          content and features.
+          Aqui você pode encontrar conteudo exclusivo dos integrantes do Grupo GAIA!
         </p>
       </section>
       <section className=" p-3 grid grid-cols-2 md:grid-cols-3 gap-2 lg:gap-3 lg:px-8 xl:px-12">

@@ -1,6 +1,7 @@
 import Image from '../components/Image';
 import Button from '../components/Button';
-import laura2 from '../assets/laura2.webp';
+import gaia22 from '../assets/formaçãoGaia2022.jpeg.jpg';
+import gaia25 from '../assets/gaiabento2025.jpeg'
 export default function AboutPage() {
   return (
     <main className="absolute w-full h-fit flex flex-col items-center">
@@ -15,23 +16,23 @@ export default function AboutPage() {
       </section>
       <section className="m-4 xl:m-8 relative flex flex-col justify-center pb-16 md:pb-0 max-w-200 ">
         <h3 className="text-white lg:text-4xl">
-          Quando tudo começou
+          Nossa história
         </h3>
         <p className="text-gray-300 mb-1 text-justify leading-5 lg:text-sm">
-          Em 2020, um grupo de amigos se reuniu para compartilhar sua
-          paixão pela música e pela arte. Assim nasceu a nossa banda.{' '}
-          Desde então, temos trabalhado arduamente para criar músicas
-          que ressoem com nossos fãs e transmitam nossas experiências
-          e emoções.
+         O Grupo Instrumental Gaia é composto de uma nova geração de estudantes dedicados à música e à arte. Unidos e criativos, seguimos a tradição do Grupo Instrumental do IFRS Campus Osório, fundado em 2013 pela inesquecível professora Agnes Schmeling. Com uma formação inédita, continuamos a conectar a comunidade através de espetáculos emocionantes, mantendo viva a essência do nosso legado artístico.{' '}
+         Desde então, temos trabalhado arduamente para criar músicas
+         que ressoem que com nossos fãs e colegas de escola possam transmitir experiências
+         e emoções que tivemos.
         </p>
         <Image
-          src={laura2}
+          src={gaia22}
           alt="Descrição da imagem"
-          caption="Laura na apresentação de Bento Gonçalves"
+          caption="Formação do Grupo Instrumental GAIA em 2022 na abertura da 12ª MOEXP do IFRS Câmpus Osório."
           className="w-full h-auto mb-4 flex flex-col items-center"
         />
-        <h3 className="text-white lg:text-4xl">Nossos Valores</h3>
+        <h3 className="text-white lg:text-4xl">Nova formação</h3>
         <p className="text-gray-300 mb-4 text-justify leading-5">
+          Desde 2024 o GAIA segue com uma formação 100% nova, e que vem se reinventando, de jovens apaixonados por musica e pelo legado dos ensinamentos da profª Agnes.
           Acreditamos no poder da música como uma forma de expressão e
           conexão humana. Sabemos que a arte é uma ferramenta importante
           para disseminação de assuntos de extrema importância, assim como acolhedora,
@@ -40,9 +41,9 @@ export default function AboutPage() {
         </p>
          
         <Image
-          src={laura2}
+          src={gaia25}
           alt="Descrição da imagem"
-          caption="Laura na apresentação de Bento Gonçalves"
+          caption="Grupo Instrumental GAIA na XII Mostra de Artes do IFRS em 2025."
           className="w-full h-auto mb-4 flex flex-col items-center"
         />
         <h3 className="text-white lg:text-4xl">Nossos Objetivos</h3>
@@ -54,15 +55,6 @@ export default function AboutPage() {
           crescer como artistas e como indivíduos, sempre buscando
           novas formas de nos expressar e conectar com nosso público.
         </p>
-        <br></br>
-
-        <h3 className="text-white lg:text-4xl">Agradecimentos</h3>
-        <p className="text-gray-300 mb-4 text-justify leading-5">
-          Agradecemos à nossa amada e eterna professora Agnes Schmeling por ter apoiado com paixão nosso
-          projeto durante sua vida, ao professor Rafael Palmeira pelo apoio
-          e auxílio nos ensaios, e também à instituição IFRS que torna a realização
-          disso possível e em nenhum momento deixou a música morrer dentro do câmpus.
-       </p>
         <Button
           variant="secondary"
           to="/"
