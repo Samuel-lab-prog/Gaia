@@ -36,7 +36,7 @@ export default function Navbar({
   }, []);
 
   const navClasses =
-    'flex items-end justify-between md:justify-start bg-transparent h-16 px-6 fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out' +
+    'flex items-end justify-between bg-black md:justify-start h-20 pb-4 border-b-2 border-white/30 px-6 fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out' +
     (scrollDirection === 'down'
       ? ' translate-y-[-100%]'
       : 'translate-y-0');
