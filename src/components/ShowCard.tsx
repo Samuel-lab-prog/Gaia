@@ -8,7 +8,7 @@ type ShowCardProps = {
 export default function ShowCard({ show }: { show: ShowCardProps }) {
   return (
     <div
-      className={`p-1 flex flex-col bg-transparent bg-opacity-50 rounded-lg shadow-lg text-center w-full`}
+      className={`p-1 flex flex-col bg-transparent bg-opacity-50 rounded-lg shadow-lg text-center w-full hover:opacity-75 transition-all duration-200`}
     >
       <div className="flex">
         <h3 className="text-white w-fit flex-7 text-start">

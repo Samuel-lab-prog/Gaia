@@ -5,17 +5,17 @@ import gaia25 from '../assets/gaiabento2025.jpeg'
 export default function AboutPage() {
   return (
     <main className="absolute w-full h-fit flex flex-col items-center">
-      <section className="p-4 mt-24 flex flex-col items-center">
+      <section className="p-4 mt-24 mb-6 flex flex-col items-center">
         <h2 className="text-white text-center lg:text-6xl">
           {' '}
-          História
+          Sobre nós
         </h2>
         <p className="text-gray-300 text-center">
           Aprenda mais sobre nosso grupo, jornada e inspiração
         </p>
       </section>
-      <section className="m-4 xl:m-8 relative flex flex-col justify-center pb-16 md:pb-0 max-w-200 ">
-        <h3 className="text-white lg:text-4xl">
+      <section className="m-4 xl:m-8 relative flex flex-col justify-center pb-20  max-w-150">
+        <h3 className="text-white lg:text-4xl mb-2">
           Nossa história
         </h3>
         <p className="text-gray-300 mb-1 text-justify leading-5 lg:text-sm">
@@ -28,10 +28,10 @@ export default function AboutPage() {
           src={gaia22}
           alt="Descrição da imagem"
           caption="Formação do Grupo Instrumental GAIA em 2022 na abertura da 12ª MOEXP do IFRS Câmpus Osório."
-          className="w-full h-auto mb-4 flex flex-col items-center"
+          className="w-full h-auto mb-12 flex flex-col items-center"
         />
-        <h3 className="text-white lg:text-4xl">Nova formação</h3>
-        <p className="text-gray-300 mb-4 text-justify leading-5">
+        <h3 className="text-white lg:text-4xl mb-2">Nova formação</h3>
+        <p className="text-gray-300 mb-2 text-justify leading-5">
           Desde 2024 o GAIA segue com uma formação 100% nova, e que vem se reinventando, de jovens apaixonados por musica e pelo legado dos ensinamentos da profª Agnes.
           Acreditamos no poder da música como uma forma de expressão e
           conexão humana. Sabemos que a arte é uma ferramenta importante
@@ -44,9 +44,9 @@ export default function AboutPage() {
           src={gaia25}
           alt="Descrição da imagem"
           caption="Grupo Instrumental GAIA na XII Mostra de Artes do IFRS em 2025."
-          className="w-full h-auto mb-4 flex flex-col items-center"
+          className="w-full h-auto mb-12 flex flex-col items-center"
         />
-        <h3 className="text-white lg:text-4xl">Nossos Objetivos</h3>
+        <h3 className="text-white lg:text-4xl mb-2">Nossos Objetivos</h3>
         <p className="text-gray-300 text-justify leading-5">
           Nosso objetivo é criar músicas que inspirem, emocionem e
           unam as pessoas. Queremos levar nossa música para o maior

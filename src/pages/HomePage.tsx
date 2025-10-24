@@ -2,8 +2,6 @@ import { motion } from 'framer-motion';
 import Button from '../components/Button';
 import laura3 from '../assets/laura3.webp';
 import membros from '../assets/membros.webp';
-import membros2 from '../assets/membros2.webp';
-import membros3 from '../assets/membros3.webp';
 import facebook from '../assets/facebook.svg';
 import youtube from '../assets/youtube.svg';
 import instagram from '../assets/instagram.svg';
@@ -50,7 +48,7 @@ export default function Home() {
 
         <div className="relative z-10">
           <h2 className="text-white md:text-5xl">Conheça o Gaia</h2>
-          <p className="my-2 text-gray-300 md:my-5 md:w-3/5 xl:w-2/5">
+          <p className="my-2 text-gray-300 md:my-5 md:w-3/5">
             Fique por dentro do aclamado Grupo Instrumental oficial do IFRS Campus Osório, conhecido por trazer a sua musicalidade de forma emocionante e acolhedora para os estudantes dos IFRS e jovens do estado. Sempre relembrando a memória da professora Agnes Schmeling que nos serve de inspiração para a continuidade do projeto. 
           </p>
           <Button to="/about" variant="secondary">
@@ -60,7 +58,7 @@ export default function Home() {
       </motion.section>
 
       <motion.section
-        className="relative flex flex-col items-start justify-center p-6 z-10 bg-top bg-cover h-70 md:h-96 lg:h-146 lg:p-12"
+        className="relative flex flex-col items-start justify-center p-6 my-6 md:my-0 z-10 bg-top bg-cover h-70 md:h-96 lg:h-146 lg:p-12"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
@@ -72,8 +70,8 @@ export default function Home() {
         <h2 className="z-10 text-white md:text-5xl w-3/5">
           Nossa missão
         </h2>
-        <p className="z-10 my-2 text-gray-300 w-3/5 md:w-3/5 xl:w-2/5">
-          Desejamos transmitir conhecimento e experiência musical para os estudantes do IFRS Câmpus Osório, com a tematica sendo escolhida anualmente pelos integrantes do grupo. No ano de 2025 queremos apresentar a musicalidade e a "Arte como Forma de Protesto".
+        <p className="z-10 my-2 text-gray-300 w-3/5 md:w-3/5">
+          Desejamos transmitir conhecimento e experiência musical para os estudantes do IFRS campus Osório, com a temática sendo escolhida anualmente pelos integrantes do grupo. No ano de 2025, queremos apresentar a musicalidade e a "Arte como Forma de Protesto".
         </p>
       </motion.section>
 
@@ -88,7 +86,7 @@ export default function Home() {
           Membros
         </h2>
         <p className="my-2 text-center text-gray-300 xl:w-3/5 ">
-          Os integrantes são todos estudantes de ensino médio e superior do IFRS Câmpus Osório, que, unidos pela paixão pela música, compoem juntos o Grupo Instrumental GAIA.
+          Os integrantes são todos estudantes de ensino médio e superior do IFRS campus Osório, que unidos pela paixão pela música, compõem juntos o Grupo Instrumental GAIA.
         </p>
         <img
           src={membros}

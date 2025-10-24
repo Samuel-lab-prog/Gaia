@@ -36,11 +36,11 @@ export default function Navbar({
   }, []);
 
   const navClasses =
-    'flex items-end justify-between bg-black md:justify-start h-20 pb-4 border-b-2 border-white/30 px-6 fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out' +
+    'flex items-center justify-between bg-black/30 border-b-2 backdrop-blur-xs md:justify-start h-20 border-white/10 px-6 fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out' +
     (scrollDirection === 'down'
       ? ' translate-y-[-100%]'
       : 'translate-y-0');
-  const linkListClasses = 'hidden md:flex gap-x-4 md:ml-12 mb-1';
+  const linkListClasses = 'hidden md:flex gap-x-4 md:ml-12 mt-3';
   const navigate = useNavigate();
   return (
     <>
@@ -55,6 +55,11 @@ export default function Navbar({
           onClick={() => {
             navigate('/');
             setIsDropdownOpen(false);
+            window.scrollTo({
+              top:0,
+              left:0,
+              behavior: 'smooth'
+            })
           }}
           className="text-white hover:cursor-pointer hover:opacity-50 transition-all duration-200"
         >
@@ -63,11 +68,17 @@ export default function Navbar({
 
         <ul className={linkListClasses}>
           {links.map((link) => (
-            <li key={link.to}>
+            <li key={link.to} onClick={()=>{
+              window.scrollTo({
+              top:0,
+              left:0,
+              behavior: 'smooth'
+            })
+            }}>
               <Button
                 to={link.to}
                 variant="anchor"
-                className="text-white"
+                className="text-white flex"
               >
                 {link.label}
               </Button>
