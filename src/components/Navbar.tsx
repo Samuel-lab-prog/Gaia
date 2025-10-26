@@ -56,10 +56,10 @@ export default function Navbar({
             navigate('/');
             setIsDropdownOpen(false);
             window.scrollTo({
-              top:0,
-              left:0,
-              behavior: 'smooth'
-            })
+              top: 0,
+              left: 0,
+              behavior: 'smooth',
+            });
           }}
           className="text-white hover:cursor-pointer hover:opacity-50 transition-all duration-200"
         >
@@ -68,17 +68,18 @@ export default function Navbar({
 
         <ul className={linkListClasses}>
           {links.map((link) => (
-            <li key={link.to} onClick={()=>{
-              window.scrollTo({
-              top:0,
-              left:0,
-              behavior: 'smooth'
-            })
-            }}>
+            <li key={link.to}>
               <Button
                 to={link.to}
                 variant="anchor"
                 className="text-white flex"
+                onClick={() => {
+                  window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth',
+                  });
+                }}
               >
                 {link.label}
               </Button>

@@ -11,7 +11,6 @@ import larissa from '../assets/larissa.jpeg';
 import paloma from '../assets/paloma.jpeg';
 import murieli from '../assets/murieli.jpeg';
 
-
 export const members = [
   {
     name: 'Laura Fetter',
@@ -30,7 +29,8 @@ export const members = [
       'Maurício é o talentoso guitarrista do drupo Gaia, reconhecido por seus riffs cativantes e solos emocionantes.',
     description2:
       'Com uma vasta experiência musical, ele traz uma abordagem única para a sonoridade da banda.',
-  },{
+  },
+  {
     name: 'Luã',
     role: 'Guitarrista',
     imageSrc: lua,
@@ -46,8 +46,9 @@ export const members = [
     description1:
       'Richard é o baixista do grupo Gaia, trazendo uma linha de baixo sólida e envolvente para as músicas.',
     description2:
-      'Com uma forte influência do rock e jass, ele adiciona uma dimensão única ao som da banda.',
-  },{
+      'Com uma forte influência do rock e jazz, ele adiciona uma dimensão única ao som da banda.',
+  },
+  {
     name: 'João',
     role: 'Bateirista',
     imageSrc: joao,
@@ -83,7 +84,7 @@ export const members = [
     description2:
       'Com uma abordagem inovadora, ela traz frescor às composições da banda.',
   },
-  
+
   {
     name: 'Diego',
     role: 'Flautista',
