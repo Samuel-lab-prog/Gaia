@@ -2,7 +2,8 @@ import Image from '../components/Image';
 import Button from '../components/Button';
 import gaia22 from '../assets/formaçãoGaia2022.jpeg.jpg';
 import gaia25 from '../assets/gaiabento2025.jpeg';
-
+import gaia252 from '../assets/gaiadia1deaula.jpg';
+import soraagnes from '../assets/Agnes 1.webp';
 export default function AboutPage() {
   return (
     <main className="absolute w-full h-fit flex flex-col items-center">
@@ -66,6 +67,29 @@ export default function AboutPage() {
           crescer como artistas e como indivíduos, sempre buscando
           novas formas de nos expressar e conectar com nosso público.
         </p>
+        <Image
+          src={gaia252}
+          alt="Descrição da imagem"
+          caption="Grupo Instrumental GAIA presente na abertura do ano letivo de 2025 do IFRS Câmpus OSório, junto do Profº Rafael Palmeira."
+          className="w-full h-auto mb-4 flex flex-col items-center"
+        />
+
+        <h3 className="text-white lg:text-4xl">Agradecimentos</h3>
+        <p className="text-gray-300 mb-4 text-justify leading-5">
+          Agradecemos à nossa amada e eterna professora Agnes
+          Schmeling por ter apoiado com tanta paixão este projeto
+          durante sua vida, ao professor Rafael Palmeira pelo apoio e
+          auxílio, sempre estando presente nos ensaios desde a sua
+          chegada ao câmpus em 2024, e também à instituição IFRS que
+          torna a realização de tudo possível e em nenhum momento
+          deixou a música morrer dentro do câmpus.
+        </p>
+        <Image
+          src={soraagnes}
+          alt="Descrição da imagem"
+          caption="A inspiradora Professora Agnes Schmeling."
+          className="w-full h-auto mb-4 flex flex-col items-center"
+        />
         <Button
           variant="secondary"
           to="/"
