@@ -7,6 +7,7 @@ import youtube from '../assets/youtube.svg';
 import instagram from '../assets/instagram.svg';
 import flautas from '../assets/flautas.webp';
 import laura from '../assets/laura.webp';
+import trio from '../assets/trio.jpg';
 
 export default function Home() {
   return (
@@ -136,6 +137,25 @@ export default function Home() {
           </a>
         </div>
       </motion.section>
+      <motion.section className="relative flex flex-col items-center p-6 z-10 bg-neutral-950 lg:p-12"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true, amount: 0.05 }}
+      >
+        <h1 className=" text-white md:text-5xl">
+          Créditos
+        </h1>
+        <p className='text-gray-300 my-4'>Feito por: Ágatha, Leonel e Samuel (Turma: 301-INFO).</p>
+
+        <img
+            src={trio}
+            alt="Ágatha, Samuel e Leonel"
+            
+          />
+          
+      </motion.section>
+
     </main>
   );
 }
