@@ -162,9 +162,9 @@ export default function Home() {
         transition={{ duration: 0.5, delay: 0.2 }}
         viewport={{ once: true, amount: 0.05 }}
       >
-        <h1 className=" text-white md:text-5xl">
+        <h2 className=" text-white md:text-5xl">
           Créditos
-        </h1>
+        </h2>
         <p className='text-gray-300 my-4'>Feito por: Ágatha, Leonel e Samuel (Turma: 301-INFO).</p>
 
         <img
