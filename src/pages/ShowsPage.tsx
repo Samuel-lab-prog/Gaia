@@ -4,6 +4,7 @@ import { shows } from '../data/shows';
 import { useNavigate } from 'react-router-dom';
 export default function ShowsPage() {
   const navigate = useNavigate();
+
   return (
     <main className="absolute w-full h-full">
       <section className="p-4 lg:px-12 mt-24 flex flex-col items-center">

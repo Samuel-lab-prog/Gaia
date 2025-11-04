@@ -3,16 +3,18 @@ import { members } from '../data/members';
 import { useNavigate } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import Button from '../components/Button';
-export default function MemberDetails() {
+
+export default function MemberDetailsPage() {
   const { memberName } = useParams();
   const member = members.find((m) => m.name === memberName);
+  if (!member) {
+    throw new Error('Membro não encontrado');
+  }
+
   const navigate = useNavigate();
   const isTablet = useMediaQuery({
     query: '(min-width: 768px)',
   });
-  if (!member) {
-    throw new Error('Membro não encontrado');
-  }
 
   return !isTablet ? (
     <main className="absolute w-full h-fit">

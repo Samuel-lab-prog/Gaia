@@ -5,7 +5,7 @@ import {
 import HomePage from './pages/HomePage';
 import ErrorPage from './pages/ErrorPage';
 import MembersPage from './pages/MembersPage';
-import MemberDetails from './pages/MemberDetails';
+import MemberDetailsPage from './pages/MemberDetailsPage';
 import ShowsPage from './pages/ShowsPage';
 import AboutPage from './pages/AboutPage';
 import Navbar from './components/Navbar';
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/members/:memberName',
-        element: <MemberDetails />,
+        element: <MemberDetailsPage />,
       },
       {
         path: '/shows',
@@ -61,9 +61,5 @@ const router = createBrowserRouter([
 ]);
 
 export default function App() {
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
